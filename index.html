@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Para mi morenita de oro 💛</title>
+  <meta name="description" content="Una carta viva para San Valentín" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <main class="card">
+    <header class="top">
+      <div class="badge"> Anaithe ✦ Alejandro 💘</div>
+      <h1>Para mi morenita de oro</h1>
+      <p class="subtitle">Nosotros somos: moshitos, pegoshtes,parejita,leales, amorosos, elegantes, intensos, eternos ✨</p>
+    </header>
+
+    <section class="hero">
+      <div class="counter">
+        <p class="label">Tiempo desde que empezamos a hablar bonito</p>
+        <div class="digits" id="timeTogether">—</div>
+        <p class="hint">Desde el 29 de diciembre de 2022 ⏱️</p>
+      </div>
+
+      <div class="counter">
+        <p class="label">Cuenta regresiva para San Valentín</p>
+        <div class="digits" id="countdown">—</div>
+        <p class="hint" id="countdownHint">Falta poquito ✨</p>
+      </div>
+    </section>
+
+    <section class="letter">
+      <h2>Mi carta</h2>
+      <p class="type" id="letterText"></p>
+
+      <div class="actions">
+        <button id="revealPhotos" class="btn">Desbloquear nuestros recuerdos 📸</button>
+        <button id="toggleNight" class="btn secondary">Modo noche 🌙</button>
+      </div>
+
+      <!-- Valentine + Cupón -->
+      <div class="valentine" id="valentine">
+        <h3 id="valTitle">¿Quieres ser mi Valentine? 💘</h3>
+        <p class="valSub" id="valSub">Prometo amor, risas y una cita increíble contigo ✨</p>
+
+        <div class="valActions" id="valActions">
+          <button class="btn" id="btnYes">Sí 💛</button>
+          <button class="btn secondary" id="btnNo">No 🙈</button>
+        </div>
+
+        <div class="coupon hidden" id="coupon">
+          <div class="couponTop">
+            <span class="chip">CUPÓN</span>
+            <span class="code" id="couponCode">—</span>
+          </div>
+          <h4>Válido por una cita juntos 🍷🌹</h4>
+          <p class="couponText">
+            Canjeable por: <strong>1 cita romántica</strong> + <strong>tu comida favorita</strong> + <strong>un abrazo largo</strong> (y besito si tú quieres).
+          </p>
+          <p class="couponText">
+            <strong>Instrucciones:</strong> Debes tomar captura de este cupón y enviármelo por WhatsApp 📲
+          </p>
+          <p class="couponFine" id="couponFine">—</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="photos hidden" id="photos">
+      <h2>Nuestros momentos</h2>
+
+      <div class="grid">
+        <!-- 1: solo tú -->
+        <figure class="ph">
+          <img src="assets/montty.jpg" alt="Alejandro" />
+          <figcaption>Yo, listo para amarte cada día más</figcaption>
+        </figure>
+
+        <!-- 2: solo ella -->
+        <figure class="ph">
+          <img src="assets/morenita.jpg" alt="Mi morenita de oro" />
+          <figcaption>Mi morenita de oro: mi paz y mi obsesión bonita, ME ENCANTAS </figcaption>
+        </figure>
+
+        <!-- 3-6: juntos -->
+        <figure class="ph">
+          <img src="assets/juntos1.jpg" alt="Nosotros 1" />
+          <figcaption>Nosotros: donde el mundo se siente correcto y en nuestro lugar seguro</figcaption>
+        </figure>
+
+        <figure class="ph">
+          <img src="assets/juntos2.jpg" alt="Nosotros 2" />
+          <figcaption>Tu mano y la mía: la mejor conexión</figcaption>
+        </figure>
+
+        <figure class="ph">
+          <img src="assets/juntos3.jpg" alt="Nosotros 3" />
+          <figcaption>Mi lugar favorito siempre eres tú</figcaption>
+        </figure>
+
+        <figure class="ph">
+          <img src="assets/juntos4.jpg" alt="Nosotros 4" />
+          <figcaption>Mi promesa: elegirte en todas mis versiones</figcaption>
+        </figure>
+      </div>
+
+    <!--  <p class="mini">Tip: si una foto se ve “cortada”, dime y ajustamos el recorte.</p> -->
+
+    </section>
+
+    <footer class="footer">
+      <p>Hecho por Alejandro 💛 | <span id="today"></span></p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
